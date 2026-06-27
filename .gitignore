@@ -1,0 +1,51 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# IDE and editor state
+.vs/
+.idea/
+.vscode/
+.dotnet/
+.tools/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test output
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# Local logs
+*.log
+
+# Local diagnostics and OCR benchmark scratch tools
+tools/PearTranslator.OcrBench/
+
+# Local packages and publish artifacts
+artifacts/
+*.zip
+*.7z
+*.nupkg
+*.snupkg
+
+# Local secrets and machine-specific settings
+*.local.json
+*.secrets.json
+settings.local.json
+appsettings.Development.json
+
+# Third-party runtime assets downloaded outside source control.
+# Keep source code and notices in Git, but do not commit large model/dictionary files.
+third_party/dictionaries/ecdict/ecdict.csv
+third_party/dictionaries/ecdict/LICENSE
+third_party/ocr/rapidocr/LICENSE-PaddleOCR.txt
+third_party/ocr/rapidocr/models/**/*.onnx
+third_party/ocr/rapidocr/models/**/*.txt

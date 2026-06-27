@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="960" viewBox="0 0 1540 960">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf2"/>
+      <stop offset="1" stop-color="#f3f7fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#1e293b" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .pageTitle { font: 700 27px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #202124; }
+      .pageHint { font: 400 17px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #69717d; }
+      .panelTitle { font: 700 20px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #202124; }
+      .caption { font: 400 14px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #77808d; }
+      .label { font: 700 15px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #5f6673; }
+      .rowLabel { font: 600 16px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #202124; }
+      .rowSub { font: 400 13px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #7a828d; }
+      .value { font: 400 17px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #1f2328; }
+      .buttonText { font: 700 15px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #fff; }
+      .checkText { font: 400 15px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #292d33; }
+      .divider { stroke: #e6e9ee; stroke-width: 1; }
+      .input { fill: #fbfcfd; stroke: #d6dce4; stroke-width: 1.2; }
+      .inputFocus { fill: #ffffff; stroke: #9aa8ff; stroke-width: 1.35; }
+      .group { fill: #f6f7f9; stroke: #eceff3; stroke-width: 1; }
+      .pill { fill: #ffffff; stroke: #d7dce3; stroke-width: 1.15; }
+    </style>
+  </defs>
+
+  <rect width="1540" height="960" fill="url(#bg)"/>
+  <text x="70" y="64" class="pageTitle">白色内容区方案对比</text>
+  <text x="70" y="96" class="pageHint">左：刚才右边那种 mac 化表单版。右：更接近 macOS System Settings 的分组列表版。</text>
+
+  <!-- Form style -->
+  <g transform="translate(70,135)" filter="url(#shadow)">
+    <rect width="665" height="755" rx="18" fill="#fff"/>
+    <g transform="translate(36,36)">
+      <text x="0" y="0" class="panelTitle">mac 化表单版</text>
+      <text x="0" y="30" class="caption">保留当前布局结构，控件更圆、更轻、更一致。</text>
+      <text x="0" y="66" class="caption">选择区域：Ctrl+Alt+Shift+R  |  暂停/继续：Ctrl+Alt+T  |  单次截图：Ctrl+Alt+S</text>
+      <line x1="0" x2="593" y1="92" y2="92" class="divider"/>
+
+      <g transform="translate(0,126)">
+        <text x="0" y="0" class="label">翻译服务</text>
+        <rect x="0" y="14" width="593" height="44" rx="9" class="inputFocus"/>
+        <text x="14" y="43" class="value">大模型 / OpenAI 兼容</text>
+        <path d="M568 31 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+        <text x="0" y="88" class="caption">使用 OpenAI-compatible 接口。国内大模型已内置端点，填 API 密钥后选择模型即可。</text>
+
+        <text x="0" y="144" class="label">OCR 引擎</text>
+        <rect x="0" y="158" width="593" height="44" rx="9" class="input"/>
+        <text x="14" y="187" class="value">本地高精度</text>
+        <path d="M568 175 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+
+        <text x="0" y="244" class="label">OCR 语言</text>
+        <rect x="0" y="258" width="593" height="44" rx="9" class="input"/>
+        <text x="14" y="287" class="value">英文</text>
+        <path d="M568 275 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+
+        <line x1="0" x2="593" y1="336" y2="336" class="divider"/>
+        <text x="0" y="380" class="label">模型平台</text>
+        <rect x="0" y="394" width="593" height="44" rx="9" class="input"/>
+        <text x="14" y="423" class="value">DeepSeek</text>
+        <path d="M568 411 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+
+        <text x="0" y="480" class="label">API 密钥</text>
+        <rect x="0" y="494" width="593" height="44" rx="9" fill="#fbfcfd" stroke="#d7dce3" stroke-width="1.2"/>
+        <text x="14" y="523" class="value">••••••••••••••••••••••••••••</text>
+
+        <text x="0" y="580" class="label">模型</text>
+        <rect x="0" y="594" width="430" height="44" rx="9" class="input"/>
+        <text x="14" y="623" class="value">deepseek-v4-flash</text>
+        <rect x="453" y="594" width="140" height="44" rx="10" fill="#1f1f22"/>
+        <text x="486" y="622" class="buttonText">获取模型</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- System settings style -->
+  <g transform="translate(805,135)" filter="url(#shadow)">
+    <rect width="665" height="755" rx="18" fill="#fff"/>
+    <g transform="translate(36,36)">
+      <text x="0" y="0" class="panelTitle">macOS System Settings 分组列表版</text>
+      <text x="0" y="30" class="caption">改成设置列表：左侧说明，右侧控件，圆角分组承载每一组设置。</text>
+      <text x="0" y="66" class="caption">选择区域：Ctrl+Alt+Shift+R  |  暂停/继续：Ctrl+Alt+T  |  单次截图：Ctrl+Alt+S</text>
+
+      <!-- Group 1 -->
+      <text x="0" y="116" class="label">基础</text>
+      <rect x="0" y="134" width="593" height="218" rx="14" class="group"/>
+      <g transform="translate(18,154)">
+        <text x="0" y="25" class="rowLabel">翻译服务</text>
+        <text x="0" y="48" class="rowSub">选择翻译来源和模式</text>
+        <rect x="303" y="6" width="252" height="38" rx="9" class="pill"/>
+        <text x="317" y="31" class="value">大模型 / OpenAI 兼容</text>
+        <path d="M532 20 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" x2="557" y1="68" y2="68" class="divider"/>
+
+        <g transform="translate(0,80)">
+          <text x="0" y="25" class="rowLabel">OCR 引擎</text>
+          <text x="0" y="48" class="rowSub">实时识别字幕区域</text>
+          <rect x="303" y="6" width="252" height="38" rx="9" class="pill"/>
+          <text x="317" y="31" class="value">本地高精度</text>
+          <path d="M532 20 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <line x1="0" x2="557" y1="148" y2="148" class="divider"/>
+
+        <g transform="translate(0,160)">
+          <text x="0" y="25" class="rowLabel">OCR 语言</text>
+          <text x="0" y="48" class="rowSub">后续可切换日文/韩文</text>
+          <rect x="303" y="6" width="252" height="38" rx="9" class="pill"/>
+          <text x="317" y="31" class="value">英文</text>
+          <path d="M532 20 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- Group 2 -->
+      <text x="0" y="396" class="label">大模型</text>
+      <rect x="0" y="414" width="593" height="218" rx="14" class="group"/>
+      <g transform="translate(18,434)">
+        <text x="0" y="25" class="rowLabel">模型平台</text>
+        <text x="0" y="48" class="rowSub">国内模型默认直连</text>
+        <rect x="303" y="6" width="252" height="38" rx="9" class="pill"/>
+        <text x="317" y="31" class="value">DeepSeek</text>
+        <path d="M532 20 l6 6 l6 -6" fill="none" stroke="#68707c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" x2="557" y1="68" y2="68" class="divider"/>
+
+        <g transform="translate(0,80)">
+          <text x="0" y="25" class="rowLabel">API 密钥</text>
+          <text x="0" y="48" class="rowSub">仅保存在本机配置中</text>
+          <rect x="303" y="6" width="252" height="38" rx="9" fill="#fff" stroke="#d7dce3" stroke-width="1.15"/>
+          <text x="317" y="31" class="value">••••••••••••••••••</text>
+        </g>
+        <line x1="0" x2="557" y1="148" y2="148" class="divider"/>
+
+        <g transform="translate(0,160)">
+          <text x="0" y="25" class="rowLabel">模型</text>
+          <text x="0" y="48" class="rowSub">低延迟翻译优先</text>
+          <rect x="303" y="6" width="170" height="38" rx="9" class="pill"/>
+          <text x="316" y="31" class="value">v4-flash</text>
+          <rect x="488" y="6" width="67" height="38" rx="9" fill="#1f1f22"/>
+          <text x="503" y="30" class="buttonText">获取</text>
+        </g>
+      </g>
+
+      <!-- Bottom action row -->
+      <rect x="0" y="670" width="142" height="44" rx="10" fill="#1f1f22"/>
+      <text x="28" y="698" class="buttonText">保存设置</text>
+      <g transform="translate(174,683)">
+        <rect x="0" y="0" width="18" height="18" rx="5" fill="#556dea"/>
+        <path d="M4.5 9.5 l3.3 3.2 l6.3 -7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        <text x="28" y="14" class="checkText">本地预翻译</text>
+      </g>
+      <g transform="translate(326,683)">
+        <rect x="0" y="0" width="18" height="18" rx="5" fill="#fff" stroke="#ccd2da"/>
+        <text x="28" y="14" class="checkText">位置覆盖</text>
+      </g>
+      <g transform="translate(456,683)">
+        <rect x="0" y="0" width="18" height="18" rx="5" fill="#fff" stroke="#ccd2da"/>
+        <text x="28" y="14" class="checkText">OCR 测试</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="RapidOcrNet" Version="2.0.0" />
+    <ProjectReference Include="..\PearTranslator.Core\PearTranslator.Core.csproj" />
+    <ProjectReference Include="..\PearTranslator.Capture.Windows\PearTranslator.Capture.Windows.csproj" />
+    <ProjectReference Include="..\PearTranslator.Ocr.Windows\PearTranslator.Ocr.Windows.csproj" />
+    <ProjectReference Include="..\PearTranslator.Translate.OpenAI\PearTranslator.Translate.OpenAI.csproj" />
+    <ProjectReference Include="..\PearTranslator.Translate.Traditional\PearTranslator.Translate.Traditional.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Assets\pear.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\pear.ico" />
+    <Resource Include="Assets\pear.png" />
+    <Content Include="Resources\local-dictionary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\third_party\dictionaries\ecdict\ecdict.csv" Link="Resources\ecdict.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\third_party\dictionaries\ecdict\LICENSE" Link="Resources\ecdict-LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\third_party\ocr\rapidocr\LICENSE-PaddleOCR.txt" Link="Licenses\PaddleOCR-LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\third_party\ocr\rapidocr\models\v5\*.*" Link="models\v5\%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\third_party\ocr\rapidocr\models\v6\*.*" Link="models\v6\%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
