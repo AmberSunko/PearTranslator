@@ -51,13 +51,23 @@ PearTranslator uses WPF, Windows desktop APIs, global hotkeys, tray integration,
 
 ## Quick Start
 
-For normal use, unzip the Windows release package and start `PearTranslator.App.Wpf.exe`. On first launch, click **配置模型** in the settings UI. The app downloads OCR models, the ECDICT dictionary, and required third-party license texts into:
+For normal use, download the Windows x64 release package:
+
+[Download PearTranslator-win-x64.zip](https://github.com/AmberSunko/PearTranslator/releases/download/v0.1.0/PearTranslator-win-x64.zip)
+
+Unzip it, open the extracted folder, and start:
+
+```text
+PearTranslator.App.Wpf.exe
+```
+
+On first launch, click **配置模型** in the settings UI. The app downloads OCR models, the ECDICT dictionary, and required third-party license texts into:
 
 ```text
 %LocalAppData%\PearTranslator\Assets
 ```
 
-After the download finishes, region selection and translation can be used directly. Normal users do not need the .NET SDK or a setup script.
+After the download finishes, region selection and translation can be used directly. Normal users do not need the .NET SDK, Visual Studio, or a setup script.
 
 For source development, install the .NET 8 SDK, then clone the repository and run:
 
